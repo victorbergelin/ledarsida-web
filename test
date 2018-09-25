@@ -1,0 +1,359 @@
+Last login: Mon Jan 18 22:41:00 on ttys000
+~/Repo/Ledare$cd ../
+.DS_Store     Backup/       Code/         Dartmouth/    Dataset_Mix/  Extra/        Google_setup/ Ledare/       binero/       liu/          politics/     python/       radio/
+~/Repo/Ledare$cd ../binero/
+~/Repo/binero$ls
+allfiles.txt  bash_history
+~/Repo/binero$cd ..
+~/Repo$ls
+Backup/       Code/         Dartmouth/    Dataset_Mix/  Extra/        Google_setup/ Ledare/       binero/       liu/          politics/     python/       radio/
+~/Repo$cd Code/
+~/Repo/Code$ls
+QS/                        TL/                        gcloudshelletc/            tools/
+README.md                  almedalen/                 github-recovery-codes.txt  web/
+~/Repo/Code$ls web/
+Divi.zip         DiviPSD.zip      HandHeldPSD.zip  handheld.zip
+~/Repo/Code$ls
+QS/                        TL/                        gcloudshelletc/            tools/
+README.md                  almedalen/                 github-recovery-codes.txt  web/
+~/Repo/Code$cd ..
+~/Repo$ls
+Backup/       Code/         Dartmouth/    Dataset_Mix/  Extra/        Google_setup/ Ledare/       binero/       liu/          politics/     python/       radio/
+~/Repo$cd Ledare/
+~/Repo/Ledare$ls
+index.php   index2.php
+~/Repo/Ledare$sh ssh.sh
+*BO3121
+148310_master@ssh.binero.se's password:
+-securelve_sh-4.1$ ls
+arloinc.yoursync.com             commutesmooth.victorbergelin.com  frame-spacers.yoursync.com    michaeldellstad.casegruppen.se  studententreprenor.se            wendu.se
+benjaminreha.victorbergelin.com  crosscloud.yoursync.com           fredrikbergelin.com           notes.victorbergelin.com        thebay.victorbergelin.com        wendu.yoursync.com
+beta.dewnote.com                 db_backup                         kilitravel.se                 politik.vicber.com              thevalley.victorbergelin.com     worldbusinessfuture.yoursync.com
+breakingloops.com                dino.victorbergelin.com           ledare.vicber.com             rbll.co                         tillsammans.victorbergelin.com   xn--studententreprenr-f0b.se
+casegruppen.victorbergelin.com   dubbelexamen.se                   m.dewnote.com                 sikvagen.yoursync.com           tillsammans2.victorbergelin.com  yoursync.com
+chef.yoursync.com                eam.yoursync.com                  manishkay.com                 smidig.it                       vicber.com
+cmpe226.victorbergelin.com       ebola.breakingloops.com           matkampen.victorbergelin.com  spacemaker.yoursync.com         victorbergelin.com
+-securelve_sh-4.1$ cd ledare.vicber.com/
+-securelve_sh-4.1$ ls
+data  logs  public_html  sessions  upload_tmp_dir
+-securelve_sh-4.1$ cd public_html/
+-securelve_sh-4.1$ ls
+binero-default.html
+-securelve_sh-4.1$ git init
+Initialized empty Git repository in /storage/content/10/148310/ledare.vicber.com/public_html/.git/
+-securelve_sh-4.1$ ls
+binero-default.html
+-securelve_sh-4.1$ git add --all
+-securelve_sh-4.1$ git commit -m "first commit"
+[master (root-commit) da6d0b7] first commit
+ Committer: 148310_master <148310_master@ssh-01-01.atm.binero.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+If the identity used for this commit is wrong, you can fix it with:
+
+    git commit --amend --author='Your Name <you@example.com>'
+
+ 1 files changed, 309 insertions(+), 0 deletions(-)
+ create mode 100644 .htaccess
+ create mode 100644 binero-default.html
+-securelve_sh-4.1$ git config --global user.name "Victor Bergelin"
+-securelve_sh-4.1$ git config --global user.email victor.bergelin@gmail.com
+-securelve_sh-4.1$ git remote add origin git@github.com:victorbergelin/ledarsida-web.git
+-securelve_sh-4.1$ git push -u origin master
+The authenticity of host 'github.com (192.30.252.130)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.130' (RSA) to the list of known hosts.
+Permission denied (publickey).
+fatal: The remote end hung up unexpectedly
+-securelve_sh-4.1$ ls -al ~/.ssh
+total 16
+drwx------  2 148310_master 148310_master 4096 Oct  8 21:11 .
+drwx--x--- 45 148310_master www-data      8192 Jan 18 22:50 ..
+-rw-r--r--  1 148310_master 148310_master  407 Jan 18 22:50 known_hosts
+-securelve_sh-4.1$ ssh-keygen
+-securelve_sh: ssh-keygen: command not found
+-securelve_sh-4.1$ system
+-securelve_sh: system: command not found
+-securelve_sh-4.1$ help
+GNU bash, version 4.1.2(1)-release (x86_64-redhat-linux-gnu)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                                 history [-c] [-d offset] [n] or history ->
+ (( expression ))                             if COMMANDS; then COMMANDS; [ elif COMMAN>
+ . filename [arguments]                       jobs [-lnprs] [jobspec ...] or jobs -x co>
+ :                                            kill [-s sigspec | -n signum | -sigspec] >
+ [ arg... ]                                   let arg [arg ...]
+ [[ expression ]]                             local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]               logout [n]
+ bg [job_spec ...]                            mapfile [-n count] [-O origin] [-s count]>
+ bind [-lpvsPVS] [-m keymap] [-f filename] >  popd [-n] [+N | -N]
+ break [n]                                    printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]            pushd [-n] [+N | -N | dir]
+ caller [expr]                                pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]...) COMM>  read [-ers] [-a array] [-d delim] [-i tex>
+ cd [-L|-P] [dir]                             readarray [-n count] [-O origin] [-s coun>
+ command [-pVv] command [arg ...]             readonly [-af] [name[=value] ...] or read>
+ compgen [-abcdefgjksuv] [-o option]  [-A a>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DE] [-o o>  select NAME [in WORDS ... ;] do COMMANDS;>
+ compopt [-o|+o option] [-DE] [name ...]      set [--abefhkmnptuvxBCHP] [-o option-name>
+ continue [n]                                 shift [n]
+ coproc [NAME] command [redirections]         shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFilrtux] [-p] [name[=value] .>  source filename [arguments]
+ dirs [-clpv] [+N] [-N]                       suspend [-f]
+ disown [-h] [-ar] [jobspec ...]              test [expr]
+ echo [-neE] [arg ...]                        time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [name ..>  times
+ eval [arg ...]                               trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [arguments .>  true
+ exit [n]                                     type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or export >  typeset [-aAfFilrtux] [-p] name[=value] .>
+ false                                        ulimit [-SHacdefilmnpqrstuvx] [limit]
+ fc [-e ename] [-lnr] [first] [last] or fc >  umask [-p] [-S] [mode]
+ fg [job_spec]                                unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMANDS; do>  unset [-f] [-v] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMANDS; d>  until COMMANDS; do COMMANDS; done
+ function name { COMMANDS ; } or name () { >  variables - Names and meanings of some sh>
+ getopts optstring name [arg]                 wait [id]
+ hash [-lr] [-p pathname] [-dt] [name ...]    while COMMANDS; do COMMANDS; done
+ help [-dms] [pattern ...]                    { COMMANDS ; }
+-securelve_sh-4.1$ local
+-securelve_sh: local: can only be used in a function
+-securelve_sh-4.1$
+Display all 546 possibilities? (y or n)
+!                        grep                     psed
+./                       grn                      pstruct
+:                        grodvi                   ptx
+Magick-config            groff                    pushd
+MagickCore-config        groffer                  pv.sh
+MagickWand-config        grolbp                   pwd
+Wand-config              grolj4                   pydoc
+[                        grops                    python
+[[                       grotty                   python2
+]]                       groups                   python2.6
+a2p                      gs                       ranlib
+addftinfo                gsbj                     raw
+addr2line                gsdj                     read
+alias                    gsdj500                  readarray
+animate                  gslj                     readelf
+ar                       gslp                     readlink
+arch                     gsnd                     readonly
+as                       gsoelim                  refer
+aspell                   gtar                     rename
+awk                      gtbl                     renice
+base64                   gtroff                   reset
+basename                 gunzip                   return
+bash                     gzexe                    rev
+bdftops                  gzip                     rm
+bg                       h2ph                     rmdir
+bind                     h2xs                     rnano
+break                    hash                     rpcgen
+builtin                  head                     rsync
+bunzip2                  help                     run-with-aspell
+bzcat                    hexdump                  runcon
+bzcmp                    history                  runuser
+bzdiff                   hostid                   rvi
+bzgrep                   hpftodit                 rview
+bzip2                    iconv                    rvim
+bzip2recover             id                       s2p
+bzless                   identify                 saslauthd
+bzmore                   idn                      sasldblistusers2
+c++                      if                       saslpasswd2
+c++filt                  igawk                    scp
+c2ph                     ijs-config               script
+c89                      import                   sdiff
+c99                      in                       securelve_sh
+cal                      indxbib                  sed
+caller                   infocmp                  select
+captoinfo                infotocap                sendmail
+case                     install                  sendmail.postfix
+cat                      instmodsh                seq
+catchsegv                ionice                   set
+cc                       ipcrm                    setsid
+cd                       ipcs                     setterm
+chcon                    isosize                  sftp
+chgrp                    ispell                   sh
+chmod                    jobs                     sha1sum
+chown                    join                     sha224sum
+chroot                   kill                     sha256sum
+chrt                     killall                  sha384sum
+cksum                    l.                       sha512sum
+clear                    ld                       shift
+cmp                      ldd                      shopt
+col                      less                     shred
+colcrt                   lessecho                 shuf
+colrm                    lesskey                  size
+column                   lesspipe.sh              sleep
+comm                     let                      slogin
+command                  libnetcfg                soelim
+compare                  link                     sort
+compgen                  lkbib                    source
+complete                 ll                       spell
+compopt                  ln                       splain
+composite                local                    split
+conjure                  locale                   sprof
+continue                 localedef                sqlite3
+convert                  logger                   ssh
+coproc                   login                    ssh-add
+cp                       logname                  ssh-agent
+cpan                     logout                   ssh-copy-id
+cpp                      look                     ssh-keyscan
+cracklib-check           lookbib                  stat
+cracklib-format          lprsetup.sh              stdbuf
+cracklib-packer          ls                       stream
+cracklib-unpacker        m4                       strings
+create-cracklib-dict     make                     strip
+csplit                   mapfile                  stty
+curl                     mcookie                  sum
+cut                      md5sum                   suspend
+date                     mkdir                    sync
+dbiprof                  mkfifo                   tabs
+dbiproxy                 mkhomedir_helper         tac
+dd                       mknod                    tail
+ddate                    mktemp                   tailf
+declare                  mogrify                  tar
+--More---securelve_sh-4.1$ ^C
+-securelve_sh-4.1$ man -k install
+-securelve_sh: man: command not found
+-securelve_sh-4.1$ ^Cn -k install
+-securelve_sh-4.1$ ^C
+-securelve_sh-4.1$ git clone git@github.com:victorbergelin/ledarsida-web.git^C
+-securelve_sh-4.1$ pwd
+/storage/content/10/148310/ledare.vicber.com/public_html
+-securelve_sh-4.1$ cd ..
+-securelve_sh-4.1$ ls
+data  logs  public_html  sessions  upload_tmp_dir
+-securelve_sh-4.1$ cd public_html/
+-securelve_sh-4.1$ ls
+binero-default.html
+-securelve_sh-4.1$ git clone git@github.com:victorbergelin/ledarsida-web.git
+Initialized empty Git repository in /storage/content/10/148310/ledare.vicber.com/public_html/ledarsida-web/.git/
+Permission denied (publickey).
+fatal: The remote end hung up unexpectedly
+-securelve_sh-4.1$ git status
+# On branch master
+nothing to commit (working directory clean)
+-securelve_sh-4.1$ git remote add origin https://github.com/victorbergelin/ledarsida-web.git
+fatal: remote origin already exists.
+-securelve_sh-4.1$ git remote add origin https://github.com/victorbergelin/ledarsida-web.git^C
+-securelve_sh-4.1$ rm .git/
+rm: cannot remove `.git/': Is a directory
+-securelve_sh-4.1$ rm -rf .git/
+-securelve_sh-4.1$ ls
+binero-default.html
+-securelve_sh-4.1$ ls -a
+.  ..  .htaccess  binero-default.html
+-securelve_sh-4.1$ git init
+Initialized empty Git repository in /storage/content/10/148310/ledare.vicber.com/public_html/.git/
+-securelve_sh-4.1$ git remote add origin https://github.com/victorbergelin/ledarsida-web.git
+-securelve_sh-4.1$ ls
+binero-default.html
+-securelve_sh-4.1$ vi index.php
+-securelve_sh-4.1$ vi index.php
+-securelve_sh-4.1$ mv index.php index2.php
+-securelve_sh-4.1$ vi index.php
+-securelve_sh-4.1$ packet_write_wait: Connection to 195.74.38.52: Broken pipe
+~/Repo/Ledare$sh ssh.sh
+*BO3121
+148310_master@ssh.binero.se's password:
+-securelve_sh-4.1$ ls
+arloinc.yoursync.com              matkampen.victorbergelin.com
+benjaminreha.victorbergelin.com   michaeldellstad.casegruppen.se
+beta.dewnote.com                  notes.victorbergelin.com
+breakingloops.com                 politik.vicber.com
+casegruppen.victorbergelin.com    rbll.co
+chef.yoursync.com                 sikvagen.yoursync.com
+cmpe226.victorbergelin.com        smidig.it
+commutesmooth.victorbergelin.com  spacemaker.yoursync.com
+crosscloud.yoursync.com           studententreprenor.se
+db_backup                         thebay.victorbergelin.com
+dino.victorbergelin.com           thevalley.victorbergelin.com
+dubbelexamen.se                   tillsammans.victorbergelin.com
+eam.yoursync.com                  tillsammans2.victorbergelin.com
+ebola.breakingloops.com           vicber.com
+frame-spacers.yoursync.com        victorbergelin.com
+fredrikbergelin.com               wendu.se
+kilitravel.se                     wendu.yoursync.com
+ledare.vicber.com                 worldbusinessfuture.yoursync.com
+m.dewnote.com                     xn--studententreprenr-f0b.se
+manishkay.com                     yoursync.com
+-securelve_sh-4.1$ cd ledare.vicber.com/
+-securelve_sh-4.1$ cd public_html/
+-securelve_sh-4.1$
+Display all 546 possibilities? (y or n)
+-securelve_sh-4.1$ ls
+binero-default.html  index.php  index2.php
+-securelve_sh-4.1$ vi index.php
+-securelve_sh-4.1$ cp index.php
+.git/                binero-default.html  index2.php
+.htaccess            index.php
+-securelve_sh-4.1$ cp index.php index1.php
+-securelve_sh-4.1$ vi index.php
+.git/                binero-default.html  index1.php
+.htaccess            index.php            index2.php
+-securelve_sh-4.1$ vi index.php
+.git/                binero-default.html  index1.php
+.htaccess            index.php            index2.php
+-securelve_sh-4.1$ vi index.php
+.git/                binero-default.html  index1.php
+.htaccess            index.php            index2.php
+-securelve_sh-4.1$ vi index.php
+.git/                binero-default.html  index1.php
+.htaccess            index.php            index2.php
+-securelve_sh-4.1$ vi index.php
+-securelve_sh-4.1$ vi ~/.
+./             .bash_history  .gitconfig     .vim/
+../            .cagefs/       .ssh/          .viminfo
+-securelve_sh-4.1$ vi ~/.viminfo
+-securelve_sh-4.1$ vi ~/.vim
+-securelve_sh-4.1$ ls
+binero-default.html  index.php  index1.php  index2.php
+-securelve_sh-4.1$ rm binero-default.html
+-securelve_sh-4.1$ ls
+index.php  index1.php  index2.php
+-securelve_sh-4.1$ vi index.php
+-securelve_sh-4.1$ vi index.php
+
+<?php
+
+$url = 'http://daringfireball.net/';
+$url = 'www.di.se/amnen/di-ledare/';
+$title = 'Daring Fireball links';
+$description = 'Links';
+
+$userAgent = 'Googlebot/2.1 (http://www.googlebot.com/bot.html)';
+
+header('Content-type: text/xml; charset=utf-8', true);
+
+//echo '<?xml version="1.0" encoding="UTF-8"?'.'>' . PHP_EOL;
+//echo '<rss version="2.0">' . PHP_EOL;
+//echo '<channel>' . PHP_EOL;
+//echo '  <title>' . $title . '</title>' . PHP_EOL;
+//echo '  <link>' . $url . '</link>' . PHP_EOL;
+//echo '  <description>' . $description . '</description>' . PHP_EOL;
+
+$curl = curl_init($url);
+curl_setopt($curl, CURLOPT_USERAGENT, $userAgent);
+curl_setopt($curl, CURLOPT_AUTOREFERER, true);
+curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
+curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1 );
+curl_setopt($curl, CURLOPT_TIMEOUT, 2 );
+
+$html = curl_exec( $curl );
+
+$html = @mb_convert_encoding($html, 'HTML-ENTITIES', 'utf-8');
+
+curl_close( $curl );
+
+$dom = new DOMDocument();
+-- INSERT --                                                                           1,6           Top
